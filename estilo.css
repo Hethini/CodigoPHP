@@ -1,0 +1,216 @@
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #A30723;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FA8072;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+table {
+	background-color: #dddddd;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#post-principal-div {
+    width: 70%;
+    float: center;
+    margin: 0 auto;
+}
+
+#post-principal {
+    height: 75px;
+    background: #dddddd;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    margin: 5px;
+}
+
+#comentarios-div {
+    width: 90%;
+    float: center;
+    margin: 0 auto;
+}
+
+#comentarios {
+    
+    background: #dddddd;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    margin: 5px;
+}
+
+#caixa-div {
+    width: 90%;
+    float: center;
+    margin: 0 auto;
+}
+
+#caixa {
+    
+    background: #dddddd;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    margin: 5px;
+}
+
+span.cad {
+    float: right;
+    padding-top: 0px;
+}
+
+span.titulo{
+    float: center;
+    padding-top: 0px;
+	padding-left: 40%;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.cad {
+       display: block;
+       float: none;
+    }
+	span.titulo {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #C0C0C0;
+}
+
+.pagination a.active {
+    background-color: #A30723;
+    color: white;
+    border: 1px solid #A30723;
+}
+
+.pagination a:hover:not(.active) {background-color: #C0C0C0;}
+
+.button {
+    background-color: #A30723; 
+	border: none;
+    color: white;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #A30723;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
